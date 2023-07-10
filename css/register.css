@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body{
+    background-color: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+}
+.header_section {
+    width: 100%;
+    float: left;
+    height: auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+}
+.logo{
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.group{
+    display: flex;
+    align-items: center;
+}
+header ul{
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    top: 8px;
+    font-weight:600;
+}
+header ul li a::before
+{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #3c3c3c;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+}
+header ul li a:hover::before
+{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.Registration {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    line-height: 1.5;
+  }
+  
+  .Registration h1 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+  .Registration h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .Registration form {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+  }
+  
+  .Registration label {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+  }
+  
+  .Registration input[type="text"] {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+  }
+  
+  .Registration input[type="submit"] {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .Registration table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+  }
+  
+  .Registration th, .Registration td {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .Registration th {
+    background-color: #f2f2f2;
+  }
+  
+  .Registration td:last-child {
+    text-align: center;
+  }
+  .btn-danger {
+    color: #fff;
+    background-color: #FF6347;
+    border-color: #FF6347;
+  }
+  
+  .btn-outline-info {
+    color: #17a2b8;
+    background-color: transparent;
+    border-color: #17a2b8;
+  }
+  
+  td button {
+    margin: 0 auto;
+    display: block;
+  }
+  
+  td.text-center {
+    text-align: center;
+  }
+  input[type="submit"][name="confirm"] {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #66CDAA;
+    background-color: #66CDAA;
+    color: #000000;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+
